@@ -46,4 +46,8 @@ public class Engine {
 		return new Search(game, output).findMove(thinkTime);
 	}
 	
+	public void printParameters() {
+		System.out.println( "("+DEVELOPMENT+","+CENTER+","+FORWARD+","+MATERIAL+")");
+	}
+	
 }

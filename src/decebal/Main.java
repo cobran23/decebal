@@ -7,9 +7,9 @@ import java.util.Scanner;
 public class Main {
 	private static Engine engine;
 	
-	private static int DEVELOPMENT = 50;
-	private static int CENTER = 50;
-	private static int FORWARD = 50;
+	private static int DEVELOPMENT = 59;
+	private static int CENTER = 79;
+	private static int FORWARD = 68;
 	private static int MATERIAL = 50;
 
 	public static void main(String[] args) {
@@ -31,9 +31,9 @@ public class Main {
 		if (inputLine.equals("uci")) {
 			System.out.println("id name Decebal");
 			System.out.println("id author Constantin Brincoveanu");
-			System.out.println("option name Development type spin default 50 min 0 max 100");
-			System.out.println("option name Center type spin default 50 min 0 max 100");
-			System.out.println("option name Forward type spin default 50 min 0 max 100");
+			System.out.println("option name Development type spin default 59 min 0 max 100");
+			System.out.println("option name Center type spin default 79 min 0 max 100");
+			System.out.println("option name Forward type spin default 68 min 0 max 100");
 			System.out.println("option name Material type spin default 50 min 0 max 100");
 			System.out.println("uciok");
 		} else if (inputLine.equals("isready")) {

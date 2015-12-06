@@ -8,41 +8,79 @@ import decebal.Game;
 import decebal.Move;
 
 public class Tuning {
-	private static final int moveTime = 2500;
-	private static final int gamesNum = 3;
+	private static final int moveTime = 1000;
+	private static final int gamesNum = 1;
+	private static final double avgDelta = 5;
+	private static final double applyFactor = 0.1;
 	
 	public static void main(String[] args) {
-		doTuning();
+		//doTuning();
+		doRoundRobin();
+		//(59,79,68,50)
+	}
+	
+	private static void doRoundRobin() {
+		int engineNum = 10;
+		Engine[] engine = new Engine[engineNum];
+		int[] score = new int[engineNum];
+		Random r = new Random();
+		for (int i = 0; i < engineNum; i++) {
+			engine[i] = new Engine((int)Math.round(59+avgDelta*r.nextGaussian()),(int)Math.round(79+avgDelta*r.nextGaussian()),(int)Math.round(68+avgDelta*r.nextGaussian()),50);
+			score[i] = 0;
+		}
+		for (int i = 0; i < engineNum; i++) {
+			for (int j = i+1; j < engineNum; j++) {
+				int result = playMatch(engine[i], engine[j]);
+				if (result == 1) {
+					score[i]+=2;
+				}
+				if (result == -1) {
+					score[j]+=2;
+				}
+				if (result == 0) {
+					score[i]++;
+					score[j]++;
+				}
+			}
+		}
+		for (int i = 0; i < engineNum; i++) {
+			System.out.print(score[i]/2.0 +"/"+(engineNum-1)+": ");
+			engine[i].printParameters();
+		}
 	}
 	
 	private static void doTuning() {
 		System.out.println("Expected cycle time: "+ moveTime*gamesNum/25 +"s");
-		int d = 85;
-		int c = 67;
-		int f = 87;
-		int m = 40;
+		double d = 59;
+		double c = 79;
+		double f = 68;
+		double m = 50;
 		int cycleNum = 0;
 		Random r = new Random();
 		long start = System.currentTimeMillis();
 		do {
 			System.out.println("Cycle "+ (++cycleNum)+":");
-			Engine e1 = new Engine(d, c, f, m);
-			int d2 = (int)Math.round(d+r.nextGaussian()*5);
-			int c2 = (int)Math.round(c+r.nextGaussian()*5);
-			int f2 = (int)Math.round(f+r.nextGaussian()*5);
-			int m2 = (int)Math.round(m+r.nextGaussian()*5);
-			Engine e2 = new Engine(d2, c2, f2, m2);
+			double deltaD = r.nextGaussian()*avgDelta;
+			double deltaC = r.nextGaussian()*avgDelta;
+			double deltaF = r.nextGaussian()*avgDelta;
+			double deltaM = r.nextGaussian()*avgDelta;
+			Engine e1 = new Engine((int)Math.round(d+deltaD), (int)Math.round(c+deltaC), (int)Math.round(f+deltaF), (int)Math.round(m+deltaM));
+			Engine e2 = new Engine((int)Math.round(d-deltaD), (int)Math.round(c-deltaC), (int)Math.round(f-deltaF), (int)Math.round(m-deltaM));
 			int result = playMatch(e1, e2);
 			String currentTime = ((System.currentTimeMillis()-start)/1000)+"s: \t";
 			if (result == -1) {
-				d = (int)Math.round((d+d2)/2.0);
-				c = (int)Math.round((c+c2)/2.0);
-				f = (int)Math.round((f+f2)/2.0);
-				m = (int)Math.round((m+m2)/2.0);
-				System.out.println(currentTime + "Engine 2 won. New parameters: d="+d+", c="+c+", f="+f+", m="+m);
+				d -= deltaD*applyFactor;
+				c -= deltaC*applyFactor;
+				f -= deltaF*applyFactor;
+				m -= deltaM*applyFactor;
+				System.out.println(currentTime + "New parameters: d="+d+", c="+c+", f="+f+", m="+m);
 			}
 			if (result == 1) {
-				System.out.println(currentTime + "Engine 1 ("+d+","+c+","+f+","+m+") won against ("+d2+","+c2+","+f2+","+m2+").");
+				d += deltaD*applyFactor;
+				c += deltaC*applyFactor;
+				f += deltaF*applyFactor;
+				m += deltaM*applyFactor;
+				System.out.println(currentTime + "New parameters: d="+d+", c="+c+", f="+f+", m="+m);
 			}
 			if (result == 0) {
 				System.out.println(currentTime + "No winner.");
@@ -101,8 +139,8 @@ public class Tuning {
 			} catch (NullPointerException ex) {
 				m = null;
 			}
-			if (movesNum > 150) {
-				//System.out.println("\nEnding game (150+ moves)");
+			if (movesNum > 100) {
+				//System.out.println("\nEnding game (100+ moves)");
 				gameOver = true;
 			}
 			if (m == null) {
