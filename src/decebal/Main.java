@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 
 public class Main {
-	private static Board board;
+	private static Engine engine;
 	
 	private static int DEVELOPMENT = 50;
 	private static int CENTER = 50;
@@ -13,7 +13,7 @@ public class Main {
 	private static int MATERIAL = 50;
 
 	public static void main(String[] args) {
-		board = new Board(DEVELOPMENT, CENTER, FORWARD, MATERIAL);
+		engine = new Engine(DEVELOPMENT, CENTER, FORWARD, MATERIAL);
 		Scanner sc = new Scanner(System.in);
 		while (sc.hasNextLine()) {
 			String command = sc.nextLine();
@@ -39,24 +39,24 @@ public class Main {
 		} else if (inputLine.equals("isready")) {
 			System.out.println("readyok");
 		} else if (inputLine.equals("ucinewgame")) {
-			board = new Board(DEVELOPMENT, CENTER, FORWARD, MATERIAL);
+			engine.resetGame();
 		} else if (inputLine.equals("position startpos")) {
-			board = new Board(DEVELOPMENT, CENTER, FORWARD, MATERIAL);
+			engine.resetGame();
 		} else if (inputLine.startsWith("position startpos moves")) {
-			board = new Board(DEVELOPMENT, CENTER, FORWARD, MATERIAL);
+			engine.resetGame();
 			String movesList = inputLine.substring(23);
 			Scanner moveScanner = new Scanner(movesList);
 			try {
 				while (moveScanner.hasNext()) {
 					String moveString = moveScanner.next();
-					ArrayList<Move> moves = board.generateMoves();
+					ArrayList<Move> moves = engine.getGame().generateMoves();
 					Move move = null;
 					for (Move m : moves) {
 						if (m.toString().equals(moveString)) {
 							move = m;
 						}
 					}
-					board.makemove(move);
+					engine.getGame().makemove(move);
 				}
 			} catch (Exception e) {
 				System.err.println("The moves could not be parsed!");
@@ -93,7 +93,6 @@ public class Main {
 			}
 			optionScanner.close();
 		} else if (inputLine.indexOf("go") == 0) {
-			Search search = new Search(board);
 			Scanner goScanner = new Scanner(inputLine);
 			long wTime = 0, bTime = 0, wInc = 0, bInc = 0, moveTime = -1, movesToGo = 40;
 			boolean infinite = false;
@@ -125,7 +124,7 @@ public class Main {
 				maxThinkTime = Math.min((int)(wTime/(movesToGo+5)+wInc),(int)(bTime/(movesToGo+5)+bInc));
 			}
 			maxThinkTime = maxThinkTime * 3; //
-			System.out.println("bestmove "+ search.findMove(maxThinkTime));
+			System.out.println("bestmove "+ engine.findMove(maxThinkTime));
 		}
 	}
 }

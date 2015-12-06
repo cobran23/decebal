@@ -3,21 +3,16 @@ package decebal;
 import java.util.ArrayList;
 
 public class Search {
-	private Board board;
+	private Game board;
 	private Move bestMove;
+	private boolean output;
 	
-	public Search(Board board) {
+	public Search(Game board, boolean output) {
 		this.board = board;
+		this.output = output;
 	}
 	
 	public String findMove(int maxThinkTime) {
-		//Book search
-		String bookMove = Book.getBestMove(board.getShortFen());
-		if (bookMove != null) {
-			return bookMove;
-		}
-		
-		//Non-book search
 		bestMove = null;
 		
 		int depth = 1;
@@ -29,13 +24,15 @@ public class Search {
 		
 		do {
 			int score;
-			if (board.side == Board.WHITE) {
+			if (board.side == Game.WHITE) {
 				score = max(depth, depth, Integer.MIN_VALUE, Integer.MAX_VALUE);
 			} else {
 				score = min(depth, depth, Integer.MIN_VALUE, Integer.MAX_VALUE);
 			}
-			System.out.println("info score cp " + score + " depth " + depth
+			if(output) {
+				System.out.println("info score cp " + score + " depth " + depth
 					+ " pv " + bestMove);
+			}
 			depth++;
 			newPassedTime = System.currentTimeMillis()-startTime;
 			if (passedTime != 0) {
@@ -76,7 +73,7 @@ public class Search {
 		}
 		
 		if (!f) {
-			if (board.in_check(Board.WHITE))
+			if (board.in_check(Game.WHITE))
 				return -100000 + startdepth - depth - 1;
 			else
 				return 0;
@@ -113,7 +110,7 @@ public class Search {
 		}
 		
 		if (!f) {
-			if (board.in_check(Board.BLACK))
+			if (board.in_check(Game.BLACK))
 				return 100000 - startdepth + depth + 1;
 			else
 				return 0;

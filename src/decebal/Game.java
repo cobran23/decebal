@@ -2,7 +2,7 @@ package decebal;
 
 import java.util.ArrayList;
 
-public class Board {
+public class Game {
 	public static final int WHITE = 0;
 	public static final int BLACK = 1;
     private static final int PAWN = 0;
@@ -73,7 +73,7 @@ public class Board {
     private int piece_sq_eval[][];
     private ArrayList<HistoryItem> history;
 
-    public Board(int DEVELOPMENT, int CENTER, int FORWARD, int MATERIAL) {
+    public Game(int DEVELOPMENT, int CENTER, int FORWARD, int MATERIAL) {
         initBoard(DEVELOPMENT, CENTER, FORWARD, MATERIAL);
     }
 
