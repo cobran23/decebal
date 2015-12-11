@@ -27,9 +27,9 @@ public class Search {
 		do {
 			int score;
 			if (board.side == Game.WHITE) {
-				score = max(depth, depth, Integer.MIN_VALUE, Integer.MAX_VALUE);
+				score = initMax(depth, depth, Integer.MIN_VALUE, Integer.MAX_VALUE);
 			} else {
-				score = min(depth, depth, Integer.MIN_VALUE, Integer.MAX_VALUE);
+				score = initMin(depth, depth, Integer.MIN_VALUE, Integer.MAX_VALUE);
 			}
 			if (Math.abs(score) > MATE-500) {
 				//found inevitable mate
@@ -63,6 +63,92 @@ public class Search {
 		return bestMove.toString();
 	}
 	
+	private int initMax(int startdepth, int depth, int alpha, int beta) {
+
+		// Return evaluated score if this is the end.
+		if (depth == 0) {
+			return board.eval();
+		}
+		ArrayList<Move> moves = board.generateMoves();
+		
+		// Put the best move as 1st 
+		if (bestMove != null && moves.contains(bestMove)) {
+			moves.remove(bestMove);
+			moves.add(0, bestMove);
+		}
+
+		boolean f = false;
+		
+		// Iterate through moves
+		for (Move move : moves) {
+			if (board.makemove(move)) {
+				f = true;
+				int x = min(startdepth, depth - 1, alpha, beta);
+				board.takeback();
+				if (x > alpha) {
+					alpha = x;
+					if (alpha >= beta) {
+						break; // beta cut-off
+					}
+					if (depth == startdepth)
+						bestMove = move;
+				}
+			}
+		}
+		
+		if (!f) {
+			if (board.in_check(Game.WHITE))
+				return -MATE + startdepth - depth - 1;
+			else
+				return 0;
+		}
+		
+		return alpha;
+	}
+
+	private int initMin(int startdepth, int depth, int alpha, int beta) {
+
+		// Return evaluated score if this is the end.
+		if (depth == 0) {
+			return board.eval();
+		}
+		ArrayList<Move> moves = board.generateMoves();
+		
+		// Put the best move as 1st 
+		if (bestMove != null && moves.contains(bestMove)) {
+			moves.remove(bestMove);
+			moves.add(0, bestMove);
+		}
+		
+		boolean f = false;
+
+		// Iterate through moves
+		for (Move move : moves) {
+			if (board.makemove(move)) {
+				f = true;
+				int x = max(startdepth, depth - 1, alpha, beta);
+				board.takeback();
+				if (x < beta) {
+					beta = x;
+					if (beta <= alpha) {
+						break; // alpha cut-off
+					}
+					if (depth == startdepth)
+						bestMove = move;
+				}
+			}
+		}
+		
+		if (!f) {
+			if (board.in_check(Game.BLACK))
+				return MATE - startdepth + depth + 1;
+			else
+				return 0;
+		}
+		
+		return beta;
+	}
+	
 	private int max(int startdepth, int depth, int alpha, int beta) {
 
 		// Return evaluated score if this is the end.
@@ -84,8 +170,6 @@ public class Search {
 					if (alpha >= beta) {
 						break; // beta cut-off
 					}
-					if (depth == startdepth)
-						bestMove = move;
 				}
 			}
 		}
@@ -121,8 +205,6 @@ public class Search {
 					if (beta <= alpha) {
 						break; // alpha cut-off
 					}
-					if (depth == startdepth)
-						bestMove = move;
 				}
 			}
 		}
