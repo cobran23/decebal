@@ -3,6 +3,7 @@ package decebal;
 import java.util.ArrayList;
 
 public class Search {
+	private static final int MATE = 100000;
 	private Game board;
 	private Move bestMove;
 	private boolean output;
@@ -22,6 +23,7 @@ public class Search {
 		double newBranchingFactor;
 		double branchingFactor = 30;
 		
+		boolean continueThinking = true;
 		do {
 			int score;
 			if (board.side == Game.WHITE) {
@@ -29,9 +31,25 @@ public class Search {
 			} else {
 				score = min(depth, depth, Integer.MIN_VALUE, Integer.MAX_VALUE);
 			}
+			if (Math.abs(score) > MATE-500) {
+				//found inevitable mate
+				continueThinking = false;
+			}
 			if(output) {
-				System.out.println("info score cp " + score + " depth " + depth
-					+ " pv " + bestMove);
+				if (board.side == Game.BLACK) {
+					score = -score;
+				}
+				if (Math.abs(score) > MATE-500) {
+					int mate = MATE-Math.abs(score)/2;
+					if (score < 0) {
+						mate = -mate;
+					}
+					System.out.println("info score mate " + mate + " depth " + depth
+							+ " pv " + bestMove);
+				} else {
+					System.out.println("info score cp " + score + " depth " + depth
+							+ " pv " + bestMove);
+				}
 			}
 			depth++;
 			newPassedTime = System.currentTimeMillis()-startTime;
@@ -40,7 +58,7 @@ public class Search {
 				branchingFactor = branchingFactor * 0.6 + newBranchingFactor * 0.4;
 			}
 			passedTime = newPassedTime;
-		} while (passedTime*branchingFactor < maxThinkTime);
+		} while (continueThinking && passedTime*branchingFactor < maxThinkTime);
 		
 		return bestMove.toString();
 	}
@@ -74,7 +92,7 @@ public class Search {
 		
 		if (!f) {
 			if (board.in_check(Game.WHITE))
-				return -100000 + startdepth - depth - 1;
+				return -MATE + startdepth - depth - 1;
 			else
 				return 0;
 		}
@@ -111,7 +129,7 @@ public class Search {
 		
 		if (!f) {
 			if (board.in_check(Game.BLACK))
-				return 100000 - startdepth + depth + 1;
+				return MATE - startdepth + depth + 1;
 			else
 				return 0;
 		}
