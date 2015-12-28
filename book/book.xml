@@ -1,72 +1,466 @@
 <?xml version="1.0"?>
 <book>
 	<!-- WHITE -->
-	<move fen="rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq">d2d4</move>
+	<move fen="rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq">e2e4</move>
 
-	<!-- second move after 1.d4 ... -->
-	<move fen="rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq">c2c4</move>
-	<move fen="rnbqkbnr/ppp1pppp/8/3p4/3P4/8/PPP1PPPP/RNBQKBNR w KQkq">c2c4</move>
-	<move fen="rnbqkbnr/pppp1ppp/4p3/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq">c2c4</move>
-	<move fen="rnbqkbnr/ppp1pppp/3p4/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq">e2e4</move>
-	<move fen="rnbqkbnr/ppppp1pp/8/5p2/3P4/8/PPP1PPPP/RNBQKBNR w KQkq">g2g3</move>
-	<move fen="rnbqkbnr/pppppp1p/6p1/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq">c2c4</move>
-	<move fen="rnbqkbnr/pp1ppppp/8/2p5/3P4/8/PPP1PPPP/RNBQKBNR w KQkq">d4d5</move>
+	<!-- play against Sicilian -->
+	<move fen="rnbqkbnr/pp1ppppp/8/2p5/4P3/8/PPPP1PPP/RNBQKBNR w KQkq">g1f3</move>
+	<move fen="rnbqkbnr/pp2pppp/3p4/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq">d2d4</move>
+	<move fen="rnbqkbnr/pp2pppp/3p4/8/3pP3/5N2/PPP2PPP/RNBQKB1R w KQkq">f3d4</move>
+	<move fen="rnbqkb1r/pp2pppp/3p1n2/8/3NP3/8/PPP2PPP/RNBQKB1R w KQkq">b1c3</move>
+	<move fen="rnbqkb1r/1p2pppp/p2p1n2/8/3NP3/2N5/PPP2PPP/R1BQKB1R w KQkq">c1e3</move>
+	<move fen="rnbqkb1r/1p3ppp/p2p1n2/4p3/3NP3/2N1B3/PPP2PPP/R2QKB1R w KQkq">d4b3</move>
+	<move fen="rn1qkb1r/1p3ppp/p2pbn2/4p3/4P3/1NN1B3/PPP2PPP/R2QKB1R w KQkq">f2f3</move>
+	<move fen="rn1qk2r/1p2bppp/p2pbn2/4p3/4P3/1NN1BP2/PPP3PP/R2QKB1R w KQkq">d1d2</move>
+	<move fen="rn1q1rk1/1p2bppp/p2pbn2/4p3/4P3/1NN1BP2/PPPQ2PP/R3KB1R w KQ">e1c2</move>
+	<move fen="r2qkb1r/1p1n1ppp/p2pbn2/4p3/4P3/1NN1BP2/PPP3PP/R2QKB1R w KQkq">g2g4</move>
+	<move fen="rn1qkb1r/1p3pp1/p2pbn2/4p2p/4P3/1NN1BP2/PPP3PP/R2QKB1R w KQkq">c3d5</move>
+	<move fen="rnbqk2r/1p2bppp/p2p1n2/4p3/4P3/1NN1B3/PPP2PPP/R2QKB1R w KQkq">h2h3</move>
+	<move fen="rnbqkb1r/1p3ppp/p2ppn2/8/3NP3/2N1B3/PPP2PPP/R2QKB1R w KQkq">f1e2</move>
+	<move fen="rnbqkb1r/1p2pppp/p2p4/8/3NP1n1/2N1B3/PPP2PPP/R2QKB1R w KQkq">e3g5</move>
+	<move fen="rnbqkb1r/1p2ppp1/p2p3p/6B1/3NP1n1/2N5/PPP2PPP/R2QKB1R w KQkq">g5h4</move>
+	<move fen="rnbqkb1r/1p2pp2/p2p3p/6p1/3NP1nB/2N5/PPP2PPP/R2QKB1R w KQkq">h4g3</move>
+	<move fen="rnbqk2r/1p2ppb1/p2p3p/6p1/3NP1n1/2N3B1/PPP2PPP/R2QKB1R w KQkq">f1c4</move>
+	<move fen="r1bqkb1r/pp2pppp/2np1n2/8/3NP3/2N5/PPP2PPP/R1BQKB1R w KQkq">c1g5</move>
+	<move fen="r1bqkb1r/pp3ppp/2nppn2/6B1/3NP3/2N5/PPP2PPP/R2QKB1R w KQkq">d1d2</move>
+	<move fen="r1bqkb1r/1p3ppp/p1nppn2/6B1/3NP3/2N5/PPPQ1PPP/R3KB1R w KQkq">e1c1</move>
+	<move fen="r2qkb1r/1p1b1ppp/p1nppn2/6B1/3NP3/2N5/PPPQ1PPP/2KR1B1R w kq">f2f3</move>
+	<move fen="r2qk2r/1p1bbppp/p1nppn2/6B1/3NP3/2N2P2/PPPQ2PP/2KR1B1R w kq">h2h4</move>
+	<move fen="r1bqk2r/pp2bppp/2nppn2/6B1/3NP3/2N5/PPPQ1PPP/R3KB1R w KQkq">e1c1</move>
+	<move fen="r1bq1rk1/pp2bppp/2nppn2/6B1/3NP3/2N5/PPPQ1PPP/2KR1B1R w -">f2f4</move>
+	<move fen="r1bqkb1r/1p3pp1/p1nppn1p/6B1/3NP3/2N5/PPPQ1PPP/2KR1B1R w kq">g5e3</move>
+	<move fen="rnbqkb1r/pp2pp1p/3p1np1/8/3NP3/2N5/PPP2PPP/R1BQKB1R w KQkq">c1e3</move>
+	<move fen="rnbqk2r/pp2ppbp/3p1np1/8/3NP3/2N1B3/PPP2PPP/R2QKB1R w KQkq">f2f3</move>
+	<move fen="rnbq1rk1/pp2ppbp/3p1np1/8/3NP3/2N1BP2/PPP3PP/R2QKB1R w KQ">d1d2</move>
+	<move fen="r1bq1rk1/pp2ppbp/2np1np1/8/3NP3/2N1BP2/PPPQ2PP/R3KB1R w KQ">e1c1</move>
+	<move fen="r1bq1rk1/pp2ppbp/2n2np1/3p4/3NP3/2N1BP2/PPPQ2PP/2KR1B1R w -">d2e1</move>
+	<move fen="r1bqk2r/pp2ppbp/2np1np1/8/3NP3/2N1BP2/PPP3PP/R2QKB1R w KQkq">d1d2</move>
+	<move fen="rnbqkb1r/pp3ppp/3ppn2/8/3NP3/2N5/PPP2PPP/R1BQKB1R w KQkq">g2g4</move>
+	<move fen="rnbqkb1r/pp3pp1/3ppn1p/8/3NP1P1/2N5/PPP2P1P/R1BQKB1R w KQkq">f1g2</move>
+	<move fen="r1bqkbnr/pp1ppppp/2n5/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq">d2d4</move>
+	<move fen="r1bqkbnr/pp1ppppp/2n5/8/3pP3/5N2/PPP2PPP/RNBQKB1R w KQkq">f3d4</move>
+	<move fen="r1bqkb1r/pp1ppppp/2n2n2/8/3NP3/8/PPP2PPP/RNBQKB1R w KQkq">b1c3</move>
+	<move fen="r1bqkb1r/pp1p1ppp/2n2n2/4p3/3NP3/2N5/PPP2PPP/R1BQKB1R w KQkq">d4b5</move>
+	<move fen="r1bqkb1r/pp3ppp/2np1n2/1N2p3/4P3/2N5/PPP2PPP/R1BQKB1R w KQkq">c1g5</move>
+	<move fen="r1bqkb1r/1p3ppp/p1np1n2/1N2p1B1/4P3/2N5/PPP2PPP/R2QKB1R w KQkq">b5a3</move>
+	<move fen="r1bqkb1r/5ppp/p1np1n2/1p2p1B1/4P3/N1N5/PPP2PPP/R2QKB1R w KQkq">c3d5</move>
+	<move fen="r1bqk2r/4bppp/p1np1n2/1p1Np1B1/4P3/N7/PPP2PPP/R2QKB1R w KQkq">g5f6</move>
+	<move fen="r1bqk2r/5ppp/p1np1b2/1p1Np3/4P3/N7/PPP2PPP/R2QKB1R w KQkq">c2c4</move>
+	<move fen="r1bqk2r/5ppp/p1np1b2/3Np3/1pP1P3/N7/PP3PPP/R2QKB1R w KQkq">a3c2</move>
+	<move fen="r1bqkb1r/pp1p1ppp/2n1pn2/8/3NP3/2N5/PPP2PPP/R1BQKB1R w KQkq">d4c6</move>
+	<move fen="r1bqkb1r/p2p1ppp/2p1pn2/8/4P3/2N5/PPP2PPP/R1BQKB1R w KQkq">e4e5</move>
+	<move fen="r1bqkb1r/p2p1ppp/2p1p3/3nP3/8/2N5/PPP2PPP/R1BQKB1R w KQkq">c3e4</move>
+	<move fen="r1b1kb1r/p1qp1ppp/2p1p3/3nP3/4N3/8/PPP2PPP/R1BQKB1R w KQkq">f2f4</move>
+	<move fen="r1bqkbnr/pp1p1ppp/2n1p3/8/3NP3/8/PPP2PPP/RNBQKB1R w KQkq">b1c3</move>
+	<move fen="r1bqkbnr/pp3ppp/2npp3/8/3NP3/2N5/PPP2PPP/R1BQKB1R w KQkq">c1e3</move>
+	<move fen="r1bqkb1r/pp3ppp/2nppn2/8/3NP3/2N1B3/PPP2PPP/R2QKB1R w KQkq">f2f4</move>
+	<move fen="r1b1kbnr/ppqp1ppp/2n1p3/8/3NP3/2N5/PPP2PPP/R1BQKB1R w KQkq">c1e3</move>
+	<move fen="r1b1kbnr/1pqp1ppp/p1n1p3/8/3NP3/2N1B3/PPP2PPP/R2QKB1R w KQkq">d1d2</move>
+	<move fen="r1b1kb1r/1pqp1ppp/p1n1pn2/8/3NP3/2N1B3/PPPQ1PPP/R3KB1R w KQkq">e1c1</move>
+	<move fen="r1b1k2r/1pqp1ppp/p1n1pn2/8/1b1NP3/2N1B3/PPPQ1PPP/2KR1B1R w kq">f2f3</move>
+	<move fen="r1bqkbnr/1p1p1ppp/p1n1p3/8/3NP3/2N5/PPP2PPP/R1BQKB1R w KQkq">c1e3</move>
+	<move fen="r1bqkbnr/pp1ppp1p/2n3p1/8/3NP3/8/PPP2PPP/RNBQKB1R w KQkq">c2c4</move>
+	<move fen="r1bqk1nr/pp1pppbp/2n3p1/8/2PNP3/8/PP3PPP/RNBQKB1R w KQkq">c1e3</move>
+	<move fen="r1bqk2r/pp1pppbp/2n2np1/8/2PNP3/4B3/PP3PPP/RN1QKB1R w KQkq">b1c3</move>
+	<move fen="r1bq1rk1/pp1pppbp/2n2np1/8/2PNP3/2N1B3/PP3PPP/R2QKB1R w KQ">f1e2</move>
+	<move fen="r1bq1rk1/pp2ppbp/2np1np1/8/2PNP3/2N1B3/PP2BPPP/R2QK2R w KQ">e1g1</move>
+	<move fen="r2q1rk1/pp1bppbp/2np1np1/8/2PNP3/2N1B3/PP2BPPP/R2Q1RK1 w -">d1d2</move>
+	<move fen="r2q1rk1/pp1bppbp/3p1np1/8/2PnP3/2N1B3/PP1QBPPP/R4RK1 w -">e3d4</move>
+	<move fen="r2q1rk1/pp2ppbp/2bp1np1/8/2PBP3/2N5/PP1QBPPP/R4RK1 w -">f2f3</move>
+	<move fen="r1bqk2r/pp1pppbp/2n3p1/8/2PNP1n1/2N1B3/PP3PPP/R2QKB1R w KQkq">d1g4</move>
+	<move fen="r1bqk2r/pp1pppbp/6p1/8/2PnP1Q1/2N1B3/PP3PPP/R3KB1R w KQkq">g4d1</move>
+	<move fen="r1bqk2r/pp1pppbp/4n1p1/8/2P1P3/2N1B3/PP3PPP/R2QKB1R w KQkq">a1c1</move>
+	<move fen="r1bqk2r/pp2ppbp/2np1np1/8/2PNP3/2N1B3/PP3PPP/R2QKB1R w KQkq">f1e2</move>
+	<move fen="r1bq1rk1/pp2ppbp/2np1np1/8/2PNP3/2N1B3/PP2BPPP/R2QK2R w KQ">e1g1</move>
+	<move fen="r2q1rk1/pp1bppbp/2np1np1/8/2PNP3/2N1B3/PP2BPPP/R2Q1RK1 w -">a1c1</move>
+	<move fen="r1bqkb1r/pp1ppp1p/2n2np1/8/2PNP3/8/PP3PPP/RNBQKB1R w KQkq">b1c3</move>
+	<move fen="r1bqkb1r/pp2pp1p/2np1np1/8/2PNP3/2N5/PP3PPP/R1BQKB1R w KQkq">f1e2</move>
+	<move fen="r1bqkbnr/pp1p1ppp/2n5/4p3/3NP3/8/PPP2PPP/RNBQKB1R w KQkq">d4b5</move>
+	<move fen="r1bqkbnr/pp3ppp/2np4/1N2p3/4P3/8/PPP2PPP/RNBQKB1R w KQkq">c2c4</move>
+	<move fen="r1bqk1nr/pp2bppp/2np4/1N2p3/2P1P3/8/PP3PPP/RNBQKB1R w KQkq">b1c3</move>
+	<move fen="r1b1kbnr/ppqppppp/2n5/8/3NP3/8/PPP2PPP/RNBQKB1R w KQkq">b1c3</move>
+	<move fen="rnbqkbnr/pp1p1ppp/4p3/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq">d2d4</move>
+	<move fen="rnbqkbnr/pp1p1ppp/4p3/8/3pP3/5N2/PPP2PPP/RNBQKB1R w KQkq">f3c4</move>
+	<move fen="rnbqkbnr/1p1p1ppp/p3p3/8/3NP3/8/PPP2PPP/RNBQKB1R w KQkq">c1d3</move>
+	<move fen="rnbqk1nr/1p1p1ppp/p3p3/2b5/3NP3/3B4/PPP2PPP/RNBQK2R w KQkq">d4b3</move>
+	<move fen="rnbqk1nr/1p1pbppp/p3p3/8/4P3/1N1B4/PPP2PPP/RNBQK2R w KQkq">d1g4</move>
+	<move fen="rnbqk1nr/1p1pbp1p/p3p1p1/8/4P1Q1/1N1B4/PPP2PPP/RNB1K2R w KQkq">g4e2</move>
+	<move fen="rnbqkb1r/1p1p1ppp/p3pn2/8/3NP3/3B4/PPP2PPP/RNBQK2R w KQkq">e1g1</move>
+	<move fen="rnb1kb1r/1pqp1ppp/p3pn2/8/3NP3/3B4/PPP2PPP/RNBQ1RK1 w kq">d1e2</move>
+	<move fen="rnb1kb1r/1pq2ppp/p2ppn2/8/3NP3/3B4/PPP1QPPP/RNB2RK1 w kq">c2c4</move>
+	<move fen="rnbqkb1r/pp1p1ppp/4pn2/8/3NP3/8/PPP2PPP/RNBQKB1R w KQkq">b1c3</move>
 
-	<!-- play against queen's indian defence -->
-	<move fen="rnbqkb1r/pppp1ppp/4pn2/8/2PP4/8/PP2PPPP/RNBQKBNR w KQkq">g1f3</move>
-	<move fen="rnbqkb1r/p1pp1ppp/1p2pn2/8/2PP4/5N2/PP2PPPP/RNBQKB1R w KQkq">a2a3</move>
-	<move fen="rn1qkb1r/pbpp1ppp/1p2pn2/8/2PP4/P4N2/1P2PPPP/RNBQKB1R w KQkq">b1c3</move>
-	
-	<!-- play against queen's gambit declined -->
-	<move fen="rnbqkbnr/ppp2ppp/4p3/3p4/2PP4/8/PP2PPPP/RNBQKBNR w KQkq">g1f3</move>
-	<move fen="rnbqkb1r/ppp2ppp/4pn2/3p4/2PP4/5N2/PP2PPPP/RNBQKB1R w KQkq">g2g3</move>
-	
-	<!-- play against slav's queen's gambit -->
-	<move fen="rnbqkbnr/pp2pppp/2p5/3p4/2PP4/8/PP2PPPP/RNBQKBNR w KQkq">b1c3</move>
-	<move fen="rnbqkb1r/pp2pppp/2p2n2/3p4/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq">e2e3</move>
+	<!-- play against the Open Game -->
+	<move fen="rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq">g1f3</move>
+	<move fen="r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq">f1b5</move>
+	<move fen="r1bqkbnr/1ppp1ppp/p1n5/1B2p3/4P3/5N2/PPPP1PPP/RNBQK2R w KQkq">b5a4</move>
+	<move fen="r1bqkb1r/1ppp1ppp/p1n2n2/4p3/B3P3/5N2/PPPP1PPP/RNBQK2R w KQkq">e1g1</move>
+	<move fen="r1bqk2r/1pppbppp/p1n2n2/4p3/B3P3/5N2/PPPP1PPP/RNBQ1RK1 w kq">f1e1</move>
+	<move fen="r1bqk2r/2ppbppp/p1n2n2/1p2p3/B3P3/5N2/PPPP1PPP/RNBQR1K1 w kq">a4b3</move>
+	<move fen="r1bq1rk1/2ppbppp/p1n2n2/1p2p3/4P3/1B3N2/PPPP1PPP/RNBQR1K1 w -">h2h3</move>
+	<move fen="r1bq1rk1/2p1bppp/p1np1n2/1p2p3/4P3/1B3N1P/PPPP1PP1/RNBQR1K1 w -">c2c3</move>
+	<move fen="r1bq1rk1/2p1bppp/p2p1n2/np2p3/4P3/1BP2N1P/PP1P1PP1/RNBQR1K1 w -">b3c2</move>
+	<move fen="r1bq1rk1/4bppp/p2p1n2/npp1p3/4P3/2P2N1P/PPBP1PP1/RNBQR1K1 w -">d2d4</move>
+	<move fen="r1b2rk1/2q1bppp/p2p1n2/npp1p3/3PP3/2P2N1P/PPB2PP1/RNBQR1K1 w -">b1d2</move>
+	<move fen="r1b2rk1/2q1bppp/p2p1n2/np2p3/3pP3/2P2N1P/PPBN1PP1/R1BQR1K1 w -">c3d4</move>
+	<move fen="rnbq1rk1/2p1bppp/p2p1n2/1p2p3/4P3/1BP2N1P/PP1P1PP1/RNBQR1K1 w -">d2d3</move>
+	<move fen="r2q1rk1/1bp1bppp/p1np1n2/1p2p3/4P3/1BP2N1P/PP1P1PP1/RNBQR1K1 w -">d2d4</move>
+	<move fen="r2qr1k1/1bp1bppp/p1np1n2/1p2p3/3PP3/1BP2N1P/PP3PP1/RNBQR1K1 w -">b1d2</move>
+	<move fen="r2qrbk1/1bp2ppp/p1np1n2/1p2p3/3PP3/1BP2N1P/PP1N1PP1/R1BQR1K1 w -">d4d5</move>
+	<move fen="r1bq1rk1/2pnbppp/p1np4/1p2p3/4P3/1BP2N1P/PP1P1PP1/RNBQR1K1 w -">d2d4</move>
+	<move fen="r1bq1rk1/2pn1ppp/p1np1b2/1p2p3/3PP3/1BP2N1P/PP3PP1/RNBQR1K1 w -">a2a4</move>
+	<move fen="r1bq1rk1/2p1bpp1/p1np1n1p/1p2p3/4P3/1BP2N1P/PP1P1PP1/RNBQR1K1 w -">d2d4</move>
+	<move fen="r1bqr1k1/2p1bpp1/p1np1n1p/1p2p3/3PP3/1BP2N1P/PP3PP1/RNBQR1K1 w -">b1d2</move>
+	<move fen="r1bqrbk1/2p2pp1/p1np1n1p/1p2p3/3PP3/1BP2N1P/PP1N1PP1/R1BQR1K1 w -">d2f1</move>
+	<move fen="r1bqr1k1/2p1bppp/p1np1n2/1p2p3/4P3/1BP2N1P/PP1P1PP1/RNBQR1K1 w -">d2d4</move>
+	<move fen="r2q1rk1/1bppbppp/p1n2n2/1p2p3/4P3/1B3N1P/PPPP1PP1/RNBQR1K1 w -">d2d3</move>
+	<move fen="r2q1rk1/1bp1bppp/p1np1n2/1p2p3/4P3/1B1P1N1P/PPP2PP1/RNBQR1K1 w -">a2a3</move>
+	<move fen="r1bqk2r/1pp1bppp/p1np1n2/4p3/B3P3/5N2/PPPP1PPP/RNBQR1K1 w kq">c2c3</move>
+	<move fen="r1bqk2r/2p1bppp/p1np1n2/1p2p3/4P3/1B3N2/PPPP1PPP/RNBQR1K1 w kq">c2c3</move>
+	<move fen="r1bq1rk1/2p1bppp/p1np1n2/1p2p3/4P3/1BP2N2/PP1P1PPP/RNBQR1K1 w -">h2h3</move>
+	<move fen="r1bqkb1r/2pp1ppp/p1n2n2/1p2p3/B3P3/5N2/PPPP1PPP/RNBQ1RK1 w kq">a4b3</move>
+	<move fen="r2qkb1r/1bpp1ppp/p1n2n2/1p2p3/4P3/1B3N2/PPPP1PPP/RNBQ1RK1 w kq">d2d3</move>
+	<move fen="r1bqk2r/2pp1ppp/p1n2n2/1pb1p3/4P3/1B3N2/PPPP1PPP/RNBQ1RK1 w kq">c2c3</move>
+	<move fen="r1bqk2r/2p2ppp/p1np1n2/1pb1p3/4P3/1BP2N2/PP1P1PPP/RNBQ1RK1 w kq">a2a4</move>
+	<move fen="r1bqkb1r/1ppp1ppp/p1n5/4p3/B3n3/5N2/PPPP1PPP/RNBQ1RK1 w kq">d2d4</move>
+	<move fen="r1bqkb1r/2pp1ppp/p1n5/1p2p3/B2Pn3/5N2/PPP2PPP/RNBQ1RK1 w kq">a4b3</move>
+	<move fen="r1bqkb1r/2p2ppp/p1n5/1p1pp3/3Pn3/1B3N2/PPP2PPP/RNBQ1RK1 w kq">d4e5</move>
+	<move fen="r2qkb1r/2p2ppp/p1n1b3/1p1pP3/4n3/1B3N2/PPP2PPP/RNBQ1RK1 w kq">b1d2</move>
+	<move fen="r2qkb1r/2p2ppp/p1n1b3/1pnpP3/8/1B3N2/PPPN1PPP/R1BQ1RK1 w kq">c2c3</move>
+	<move fen="r1bqkb1r/1pp2ppp/p1np1n2/4p3/B3P3/5N2/PPPP1PPP/RNBQ1RK1 w kq">f1e1</move>
+	<move fen="r1bqk2r/1ppp1ppp/p1n2n2/2b1p3/B3P3/5N2/PPPP1PPP/RNBQ1RK1 w kq">c2c3</move>
+	<move fen="r1bqkbnr/1pp2ppp/p1np4/4p3/B3P3/5N2/PPPP1PPP/RNBQK2R w KQkq">e1g1</move>
+	<move fen="r2qkbnr/1ppb1ppp/p1np4/4p3/B3P3/5N2/PPPP1PPP/RNBQ1RK1 w kq">c2c3</move>
+	<move fen="r1bqkbnr/2pp1ppp/p1n5/1p2p3/B3P3/5N2/PPPP1PPP/RNBQK2R w KQkq">a4b3</move>
+	<move fen="r1bqkb1r/1pppnppp/p1n5/4p3/B3P3/5N2/PPPP1PPP/RNBQK2R w KQkq">d2d4</move>
+	<move fen="r1bqkb1r/pppp1ppp/2n2n2/1B2p3/4P3/5N2/PPPP1PPP/RNBQK2R w KQkq">e1g1</move>
+	<move fen="r1bqkb1r/pppp1ppp/2n5/1B2p3/4n3/5N2/PPPP1PPP/RNBQ1RK1 w kq">d2d4</move>
+	<move fen="r1bqkb1r/pppp1ppp/2nn4/1B2p3/3P4/5N2/PPP2PPP/RNBQ1RK1 w kq">b5c6</move>
+	<move fen="r1bqkb1r/ppp2ppp/2pn4/4p3/3P4/5N2/PPP2PPP/RNBQ1RK1 w kq">d4e5</move>
+	<move fen="r1bqkb1r/ppp2ppp/2p5/4Pn2/8/5N2/PPP2PPP/RNBQ1RK1 w kq">d1d8</move>
+	<move fen="r1bk1b1r/ppp2ppp/2p5/4Pn2/8/5N2/PPP2PPP/RNB2RK1 w -">h2h3</move>
+	<move fen="r1bqk2r/ppppbppp/2n5/1B2p3/3Pn3/5N2/PPP2PPP/RNBQ1RK1 w kq">d1e2</move>
+	<move fen="r1bqk2r/ppppbppp/2nn4/1B2p3/3P4/5N2/PPP1QPPP/RNB2RK1 w kq">b5c6</move>
+	<move fen="r1bqk2r/p1ppbppp/2pn4/4p3/3P4/5N2/PPP1QPPP/RNB2RK1 w kq">d4e5</move>
+	<move fen="r1bqk2r/pppp1ppp/2n2n2/1Bb1p3/4P3/5N2/PPPP1PPP/RNBQ1RK1 w kq">c2c3</move>
+	<move fen="r1bqkb1r/ppp2ppp/2np1n2/1B2p3/4P3/5N2/PPPP1PPP/RNBQ1RK1 w kq">f1e1</move>
+	<move fen="r1bqkbnr/pppp2pp/2n5/1B2pp2/4P3/5N2/PPPP1PPP/RNBQK2R w KQkq">d2d3</move>
+	<move fen="r1bqkbnr/pppp2pp/2n5/1B2p3/4p3/3P1N2/PPP2PPP/RNBQK2R w KQkq">d3e4</move>
+	<move fen="r1bqk1nr/pppp1ppp/2n5/1Bb1p3/4P3/5N2/PPPP1PPP/RNBQK2R w KQkq">c2c3</move>
+	<move fen="r1bqkbnr/pppp1p1p/2n3p1/1B2p3/4P3/5N2/PPPP1PPP/RNBQK2R w KQkq">c2c3</move>
+	<move fen="r1bqkbnr/ppp2ppp/2np4/1B2p3/4P3/5N2/PPPP1PPP/RNBQK2R w KQkq">d2d4</move>
+	<move fen="r1bqkbnr/pppp1ppp/8/1B2p3/3nP3/5N2/PPPP1PPP/RNBQK2R w KQkq">f3d4</move>
+	<move fen="r1bqkbnr/pppp1ppp/8/1B6/3pP3/8/PPPP1PPP/RNBQK2R w KQkq">e1g1</move>
+	<move fen="rnbqkb1r/pppp1ppp/5n2/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq">f3e5</move>
+	<move fen="rnbqkb1r/ppp2ppp/3p1n2/4N3/4P3/8/PPPP1PPP/RNBQKB1R w KQkq">e5f3</move>
+	<move fen="rnbqkb1r/ppp2ppp/3p4/8/4n3/5N2/PPPP1PPP/RNBQKB1R w KQkq">b1c3</move>
+	<move fen="rnbqkb1r/ppp2ppp/3p4/8/8/2n2N2/PPPP1PPP/R1BQKB1R w KQkq">d2c3</move>
+	<move fen="rnbqk2r/ppp1bppp/3p4/8/8/2P2N2/PPP2PPP/R1BQKB1R w KQkq">c1f4</move>
+	<move fen="rnbqkbnr/ppp2ppp/3p4/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq">d2d4</move>
+	<move fen="rnbqkbnr/ppp2ppp/3p4/8/3pP3/5N2/PPP2PPP/RNBQKB1R w KQkq">f3d4</move>
+	<move fen="rnbqkb1r/ppp2ppp/3p1n2/8/3NP3/8/PPP2PPP/RNBQKB1R w KQkq">b1c3</move>
+	<move fen="rnbqk2r/ppp1bppp/3p1n2/8/3NP3/2N5/PPP2PPP/R1BQKB1R w KQkq">c1f4</move>
+	<move fen="rnbqkb1r/ppp2ppp/3p1n2/4p3/3PP3/5N2/PPP2PPP/RNBQKB1R w KQkq">d4e5</move>
+	<move fen="r1bqkbnr/pppn1ppp/3p4/4p3/3PP3/5N2/PPP2PPP/RNBQKB1R w KQkq">f1c4</move>
 
+	<!-- play against French -->
+	<move fen="rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq">d2d4</move>
+	<move fen="rnbqkbnr/ppp2ppp/4p3/3p4/3PP3/8/PPP2PPP/RNBQKBNR w KQkq">b1d2</move>
+	<move fen="rnbqkbnr/pp3ppp/4p3/2pp4/3PP3/8/PPPN1PPP/R1BQKBNR w KQkq">g1f3</move>
+	<move fen="rnbqkbnr/pp3ppp/4p3/3p4/3pP3/5N2/PPPN1PPP/R1BQKB1R w KQkq">f3d4</move>
+	<move fen="r1bqkbnr/pp3ppp/2n1p3/2pp4/3PP3/5N2/PPPN1PPP/R1BQKB1R w KQkq">e4d5</move>
+	<move fen="r1bqkbnr/pp3ppp/2n5/2pp4/3P4/5N2/PPPN1PPP/R1BQKB1R w KQkq">f1b5</move>
+	<move fen="r1bqk1nr/pp3ppp/2nb4/1Bpp4/3P4/5N2/PPPN1PPP/R1BQK2R w KQkq">d4c5</move>
+	<move fen="r1bqk1nr/pp3ppp/2n5/1Bbp4/8/5N2/PPPN1PPP/R1BQK2R w KQkq">e1g1</move>
+	<move fen="r1bqk2r/pp2nppp/2n5/1Bbp4/8/5N2/PPPN1PPP/R1BQ1RK1 w kq">d2b3</move>
+	<move fen="rnbqkbnr/1p3ppp/p3p3/2pp4/3PP3/5N2/PPPN1PPP/R1BQKB1R w KQkq">d4c5</move>
+	<move fen="rnbqkb1r/pp3ppp/4pn2/2pp4/3PP3/5N2/PPPN1PPP/R1BQKB1R w KQkq">e4e5</move>
+	<move fen="rnbqkb1r/ppp2ppp/4pn2/3p4/3PP3/8/PPPN1PPP/R1BQKBNR w KQkq">e4e5</move>
+	<move fen="rnbqkb1r/pppn1ppp/4p3/3pP3/3P4/8/PPPN1PPP/R1BQKBNR w KQkq">c2c3</move>
+	<move fen="rnbqkb1r/pp1n1ppp/4p3/2ppP3/3P4/2P5/PP1N1PPP/R1BQKBNR w KQkq">g1f3</move>
+	<move fen="rnbqk1nr/ppp1bppp/4p3/3p4/3PP3/8/PPPN1PPP/R1BQKBNR w KQkq">g1f3</move>
+	<move fen="rnbqk2r/ppp1bppp/4pn2/3p4/3PP3/5N2/PPPN1PPP/R1BQKB1R w KQkq">e4e5</move>
+	<move fen="rnbqkbnr/ppp2ppp/4p3/8/3Pp3/8/PPPN1PPP/R1BQKBNR w KQkq">d2e4</move>
+	<move fen="r1bqkbnr/pppn1ppp/4p3/8/3PN3/8/PPP2PPP/R1BQKBNR w KQkq">g1f3</move>
+	<move fen="r1bqkb1r/pppn1ppp/4pn2/8/3PN3/5N2/PPP2PPP/R1BQKB1R w KQkq">e4f6</move>
+	<move fen="r1bqkb1r/ppp2ppp/4pn2/8/3P4/5N2/PPP2PPP/R1BQKB1R w KQkq">f1d3</move>
+	<move fen="rn1qkbnr/pppb1ppp/4p3/8/3PN3/8/PPP2PPP/R1BQKBNR w KQkq">g1f3</move>
+	<move fen="rn1qkbnr/ppp2ppp/2b1p3/8/3PN3/5N2/PPP2PPP/R1BQKB1R w KQkq">f1d3</move>
+	<move fen="r2qkbnr/pppn1ppp/2b1p3/8/3PN3/3B1N2/PPP2PPP/R1BQK2R w KQkq">e1g1</move>
+	<move fen="r1bqkbnr/ppp2ppp/2n1p3/3p4/3PP3/8/PPPN1PPP/R1BQKBNR w KQkq">g1f3</move>
+	<move fen="r1bqkb1r/ppp2ppp/2n1pn2/3p4/3PP3/5N2/PPPN1PPP/R1BQKB1R w KQkq">e4e5</move>
+	<move fen="r1bqkb1r/pppn1ppp/2n1p3/3pP3/3P4/5N2/PPPN1PPP/R1BQKB1R w KQkq">d2b3</move>
+	<move fen="rnbqkbnr/1pp2ppp/p3p3/3p4/3PP3/8/PPPN1PPP/R1BQKBNR w KQkq">g1f3</move>
+
+	<!-- play against Caro-Kann -->
+	<move fen="rnbqkbnr/pp1ppppp/2p5/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq">d2d4</move>
+	<move fen="rnbqkbnr/pp2pppp/2p5/3p4/3PP3/8/PPP2PPP/RNBQKBNR w KQkq">e4e5</move>
+	<move fen="rn1qkbnr/pp2pppp/2p5/3pPb2/3P4/8/PPP2PPP/RNBQKBNR w KQkq">h2h4</move>
+	<move fen="rn1qkbnr/pp2ppp1/2p5/3pPb1p/3P3P/8/PPP2PP1/RNBQKBNR w KQkq">c2c4</move>
+	<move fen="rn1qkbnr/pp2ppp1/2p4p/3pPb2/3P3P/8/PPP2PP1/RNBQKBNR w KQkq">g2g4</move>
+	<move fen="rnbqkbnr/pp2pppp/8/2ppP3/3P4/8/PPP2PPP/RNBQKBNR w KQkq">d4c5</move>
+	<move fen="rnbqkbnr/pp1ppp1p/2p3p1/8/3PP3/8/PPP2PPP/RNBQKBNR w KQkq">c2c4</move>
+
+	<!-- play against Pirc and Modern Defense -->
+	<move fen="rnbqkbnr/ppp1pppp/3p4/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq">d2d4</move>
+	<move fen="rnbqkb1r/ppp1pppp/3p1n2/8/3PP3/8/PPP2PPP/RNBQKBNR w KQkq">f2f3</move>
+	<move fen="rnbqkbnr/ppp1pp1p/3p2p1/8/3PP3/8/PPP2PPP/RNBQKBNR w KQkq">b1c3</move>
+	<move fen="rnbqkb1r/ppp1pp1p/3p1np1/8/3PP3/2N5/PPP2PPP/R1BQKBNR w KQkq">c1e3</move>
+	<move fen="rnbqk2r/ppp1ppbp/3p1np1/8/3PP3/2N1B3/PPP2PPP/R2QKBNR w KQkq">d1d2</move>
+	<move fen="rnbqkb1r/pp2pp1p/2pp1np1/8/3PP3/2N1B3/PPP2PPP/R2QKBNR w KQkq">d1d2</move>
+	<move fen="rnbqk1nr/ppp1ppbp/3p2p1/8/3PP3/2N5/PPP2PPP/R1BQKBNR w KQkq">c1e3</move>
+	<move fen="rnbqk1nr/pp2ppbp/2pp2p1/8/3PP3/2N1B3/PPP2PPP/R2QKBNR w KQkq">d1d2</move>
+	<move fen="rnbqk1nr/1pp1ppbp/p2p2p1/8/3PP3/2N1B3/PPP2PPP/R2QKBNR w KQkq">d1d2</move>
+	<move fen="rnbqkbnr/pppppp1p/6p1/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq">d2d4</move>
+	<move fen="rnbqk1nr/ppppppbp/6p1/8/3PP3/8/PPP2PPP/RNBQKBNR w KQkq">b1c3</move>
+	<move fen="rnbqk1nr/pp1pppbp/2p3p1/8/3PP3/2N5/PPP2PPP/R1BQKBNR w KQkq">c1e3</move>
+
+	<!-- play against Scandinavian -->
+	<move fen="rnbqkbnr/ppp1pppp/8/3p4/4P3/8/PPPP1PPP/RNBQKBNR w KQkq">e4d5</move>
+	<move fen="rnb1kbnr/ppp1pppp/8/3q4/8/8/PPPP1PPP/RNBQKBNR w KQkq">b1c3</move>
+	<move fen="rnb1kbnr/ppp1pppp/8/q7/8/2N5/PPPP1PPP/R1BQKBNR w KQkq">g1f3</move>
+	<move fen="rnb1kbnr/ppp1pppp/3q4/8/8/2N5/PPPP1PPP/R1BQKBNR w KQkq">d2d4</move>
+	<move fen="rnb1kb1r/ppp1pppp/3q1n2/8/3P4/2N5/PPP2PPP/R1BQKBNR w KQkq">g1f3</move>
+	<move fen="rnbqkb1r/ppp1pppp/5n2/3P4/8/8/PPPP1PPP/RNBQKBNR w KQkq">g1f3</move>
+
+	<!-- play against 1...Nf6 -->
+	<move fen="rnbqkb1r/pppppppp/5n2/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq">e4e5</move>
+	<move fen="rnbqkb1r/pppppppp/8/3nP3/8/8/PPPP1PPP/RNBQKBNR w KQkq">d2d4</move>
+	<move fen="rnbqkb1r/ppp1pppp/3p4/3nP3/3P4/8/PPP2PPP/RNBQKBNR w KQkq">g1f3</move>
+	<move fen="rn1qkb1r/ppp1pppp/3p4/3nP3/3P2b1/5N2/PPP2PPP/RNBQKB1R w KQkq">f1e2</move>
+	<move fen="rn1qkb1r/ppp2ppp/3pp3/3nP3/3P2b1/5N2/PPP1BPPP/RNBQK2R w KQkq">e1g1</move>
+	<move fen="rn1qk2r/ppp1bppp/3pp3/3nP3/3P2b1/5N2/PPP1BPPP/RNBQ1RK1 w kq">c2c4</move>
+	<move fen="rnbqkb1r/ppp1pp1p/3p2p1/3nP3/3P4/5N2/PPP2PPP/RNBQKB1R w KQkq">f1c4</move>
+	<move fen="rnbqkb1r/ppp1pp1p/1n1p2p1/4P3/2BP4/5N2/PPP2PPP/RNBQK2R w KQkq">c4b3</move>
+	<move fen="rnbqkb1r/ppp1pppp/8/3np3/3P4/5N2/PPP2PPP/RNBQKB1R w KQkq">f3e5</move>
+	<move fen="rnbqkb1r/pp2pppp/2p5/3nN3/3P4/8/PPP2PPP/RNBQKB1R w KQkq">f1e2</move>
+
+	<!-- play against 1...Nc6 -->
+	<move fen="r1bqkbnr/pppppppp/2n5/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq">g1f3</move>
+	<move fen="r1bqkbnr/ppp1pppp/2np4/8/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq">d2d4</move>
+
+	<!-- play against 1...b6 -->
+	<move fen="rnbqkbnr/p1pppppp/1p6/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq">d2d4</move>
+	<move fen="rn1qkbnr/pbpppppp/1p6/8/3PP3/8/PPP2PPP/RNBQKBNR w KQkq">f1d3</move>
+	<move fen="rn1qkbnr/pbpp1ppp/1p2p3/8/3PP3/3B4/PPP2PPP/RNBQK1NR w KQkq">g1f3</move>
+
+	<!-- play against 1...a6 -->
+	<move fen="rnbqkbnr/1ppppppp/p7/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq">d2d4</move>
 
 	<!-- BLACK -->
-	<!-- play Sicilian Najdorf -->
-	<move fen="rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq">c7c5</move>
-	<move fen="rnbqkbnr/pp1ppppp/8/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R b KQkq">d7d6</move>
-	<move fen="rnbqkbnr/pp2pppp/3p4/2p5/3PP3/5N2/PPP2PPP/RNBQKB1R b KQkq">c5d4</move>
-	<move fen="rnbqkbnr/pp2pppp/3p4/8/3NP3/8/PPP2PPP/RNBQKB1R b KQkq">g8f6</move>
-	<move fen="rnbqkb1r/pp2pppp/3p1n2/8/3NP3/2N5/PPP2PPP/R1BQKB1R b KQkq">a7a6</move>
 
-	<!-- 1.d4 Nf6 c4 e6 -->
+	<!-- 1.e4 -->
+	<!-- play the Berlin Defense -->
+	<move fen="rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq">e7e5</move>
+	<move fen="rnbqkbnr/pppp1ppp/8/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R b KQkq">b8c6</move>
+	<move fen="r1bqkbnr/pppp1ppp/2n5/1B2p3/4P3/5N2/PPPP1PPP/RNBQK2R b KQkq">g8f6</move>
+	<move fen="r1bqkb1r/pppp1ppp/2n2n2/1B2p3/4P3/5N2/PPPP1PPP/RNBQ1RK1 b kq">f6e4</move>
+	<move fen="r1bqkb1r/pppp1ppp/2n5/1B2p3/3Pn3/5N2/PPP2PPP/RNBQ1RK1 b kq">e4d6</move>
+	<move fen="r1bqkb1r/pppp1ppp/2Bn4/4p3/3P4/5N2/PPP2PPP/RNBQ1RK1 b kq">d7c6</move>
+	<move fen="r1bqkb1r/ppp2ppp/2pn4/4P3/8/5N2/PPP2PPP/RNBQ1RK1 b kq">d6f5</move>
+	<move fen="r1bQkb1r/ppp2ppp/2p5/4Pn2/8/5N2/PPP2PPP/RNB2RK1 b kq">e8d8</move>
+	<move fen="r1bk1b1r/ppp2ppp/2p5/4Pn2/8/2N2N2/PPP2PPP/R1B2RK1 b -">d8e8</move>
+	<move fen="r1b1kb1r/ppp2ppp/2p5/4Pn2/8/2N2N1P/PPP2PP1/R1B2RK1 b -">h7h5</move>
+	<move fen="r1bqkb1r/pppp1ppp/2n5/1B2p3/4n3/5N2/PPPP1PPP/RNBQR1K1 b kq">e4d6</move>
+	<move fen="r1bqkb1r/pppp1ppp/2nn4/1B2N3/8/8/PPPP1PPP/RNBQR1K1 b kq">f8e7</move>
+	<move fen="r1bqkb1r/pppp1ppp/2n2n2/1B2p3/4P3/2N2N2/PPPP1PPP/R1BQK2R b KQkq">f8d6</move>
+	<move fen="r1bqkb1r/pppp1ppp/2n2n2/1B2p3/4P3/3P1N2/PPP2PPP/RNBQK2R b KQkq">f8c5</move>
+	<move fen="r1bqk2r/pppp1ppp/2n2n2/1Bb1p3/4P3/2PP1N2/PP3PPP/RNBQK2R b KQkq">e8g8</move>
+	<!-- play the Italian Game -->
+	<move fen="r1bqkbnr/pppp1ppp/2n5/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R b KQkq">f8c5</move>
+	<move fen="r1bqk1nr/pppp1ppp/2n5/2b1p3/2B1P3/2P2N2/PP1P1PPP/RNBQK2R b KQkq">d8e7</move>
+	<move fen="r1bqk1nr/pppp1ppp/2n5/2b1p3/1PB1P3/5N2/P1PP1PPP/RNBQK2R b KQkq">c5b4</move>
+	<move fen="r1bqk1nr/pppp1ppp/2n5/4p3/1bB1P3/2P2N2/P2P1PPP/RNBQK2R b KQkq">b4a5</move>
+	<move fen="r1bqk1nr/pppp1ppp/2n5/b3p3/2BPP3/2P2N2/P4PPP/RNBQK2R b KQkq">e5d4</move>
+	<move fen="r1bqk1nr/pppp1ppp/2n5/b7/2BpP3/2P2N2/P4PPP/RNBQ1RK1 b kq">g8e7</move>
+	<move fen="r1bqk1nr/pppp1ppp/2n5/2b1p3/2B1P3/5N2/PPPP1PPP/RNBQ1RK1 b kq">d7d6</move>
+	<move fen="r1bqk1nr/pppp1ppp/2n5/2b1p3/2B1P3/3P1N2/PPP2PPP/RNBQK2R b KQkq">d7d6</move>
+	<move fen="r1bqk1nr/pppp1ppp/2n5/2b1p3/2B1P3/2N2N2/PPPP1PPP/R1BQK2R b KQkq">d7d6</move>
+	<!-- play the Scotch Game -->
+	<move fen="r1bqkbnr/pppp1ppp/2n5/4p3/3PP3/5N2/PPP2PPP/RNBQKB1R b KQkq">e5d4</move>
+	<move fen="r1bqkbnr/pppp1ppp/2n5/8/3NP3/8/PPP2PPP/RNBQKB1R b KQkq">f8b4</move>
+	<move fen="r1bqkbnr/pppp1ppp/2n5/8/2BpP3/5N2/PPP2PPP/RNBQK2R b KQkq">g8f6</move>
+	<move fen="r1bqkb1r/pppp1ppp/2n2n2/8/2BpP3/5N2/PPP2PPP/RNBQ1RK1 b kq">f6e4</move>
+	<move fen="r1bqkb1r/pppp1ppp/2n5/8/2Bpn3/5N2/PPP2PPP/RNBQR1K1 b kq">d7d5</move>
+	<move fen="r1bqkb1r/ppp2ppp/2n5/3B4/3pn3/5N2/PPP2PPP/RNBQR1K1 b kq">d8d5</move>
+	<move fen="r1b1kb1r/ppp2ppp/2n5/3q4/3pn3/2N2N2/PPP2PPP/R1BQR1K1 b kq">d5a5</move>
+	<move fen="r1bqkb1r/pppp1ppp/2n2n2/4P3/2Bp4/5N2/PPP2PPP/RNBQK2R b KQkq">f8g4</move>
+	<!-- play the Four Knights Game -->
+	<move fen="r1bqkbnr/pppp1ppp/2n5/4p3/4P3/2N2N2/PPPP1PPP/R1BQKB1R b KQkq">g8f6</move>
+	<move fen="r1bqkb1r/pppp1ppp/2n2n2/1B2p3/4P3/2N2N2/PPPP1PPP/R1BQK2R b KQkq">f8b4</move>
+	<move fen="r1bqk2r/pppp1ppp/2n2n2/1B2p3/1b2P3/2N2N2/PPPP1PPP/R1BQ1RK1 b kq">e8g8</move>
+	<move fen="r1bq1rk1/pppp1ppp/2n2n2/1B2p3/1b2P3/2NP1N2/PPP2PPP/R1BQ1RK1 b -">b4c3</move>
+	<move fen="r1bqkb1r/pppp1ppp/2n2n2/4p3/3PP3/2N2N2/PPP2PPP/R1BQKB1R b KQkq">e5d4</move>
+	<move fen="r1bqkb1r/pppp1ppp/2n2n2/8/3NP3/2N5/PPP2PPP/R1BQKB1R b KQkq">f8b4</move>
+	<move fen="r1bqk2r/pppp1ppp/2N2n2/8/1b2P3/2N5/PPP2PPP/R1BQKB1R b KQkq">b7c6</move>
+	<move fen="r1bqk2r/p1pp1ppp/2p2n2/8/1b2P3/2NB4/PPP2PPP/R1BQK2R b KQkq">e8g8</move>
+	<move fen="r1bqkb1r/pppp1ppp/2n2n2/4p3/2B1P3/2N2N2/PPPP1PPP/R1BQK2R b KQkq">f6e4</move>
+	<move fen="r1bqkb1r/pppp1ppp/2n2n2/4p3/4P3/2N2NP1/PPPP1P1P/R1BQKB1R b KQkq">f8c5</move>
+	<move fen="r1bqkbnr/pppp1ppp/2n5/4p3/4P3/2P2N2/PP1P1PPP/RNBQKB1R b KQkq">d7d5</move>
+	<!-- play against King's Gambit -->
+	<move fen="rnbqkbnr/pppp1ppp/8/4p3/4PP2/8/PPPP2PP/RNBQKBNR b KQkq">e5f4</move>
+	<move fen="rnbqkbnr/pppp1ppp/8/8/4Pp2/5N2/PPPP2PP/RNBQKB1R b KQkq">g7g5</move>
+	<move fen="rnbqkbnr/pppp1p1p/8/6p1/2B1Pp2/5N2/PPPP2PP/RNBQK2R b KQkq">f8g7</move>
+	<move fen="rnbqkbnr/pppp1p1p/8/6p1/4Pp1P/5N2/PPPP2P1/RNBQKB1R b KQkq">g5g4</move>
+	<move fen="rnbqkbnr/pppp1p1p/8/4N3/4PppP/8/PPPP2P1/RNBQKB1R b KQkq">d7d6</move>
+	<move fen="rnbqkbnr/pppp1ppp/8/8/2B1Pp2/8/PPPP2PP/RNBQK1NR b KQkq">d7d5</move>
+	<!-- play the Vienna Game -->
+	<move fen="rnbqkbnr/pppp1ppp/8/4p3/4P3/2N5/PPPP1PPP/R1BQKBNR b KQkq">g8f6</move>
+	<move fen="rnbqkb1r/pppp1ppp/5n2/4p3/4P3/2N2N2/PPPP1PPP/R1BQKB1R b KQkq">b8c6</move>
+	<move fen="rnbqkb1r/pppp1ppp/5n2/4p3/4PP2/2N5/PPPP2PP/R1BQKBNR b KQkq">d7d5</move>
+	<move fen="rnbqkb1r/ppp2ppp/5n2/3pP3/4P3/2N5/PPPP2PP/R1BQKBNR b KQkq">f6e4</move>
+	<move fen="rnbqkb1r/ppp2ppp/8/3pP3/4n3/2N2N2/PPPP2PP/R1BQKB1R b KQkq">b8c6</move>
+	<move fen="rnbqkb1r/ppp2ppp/8/3pP3/4n3/2NP4/PPP3PP/R1BQKBNR b KQkq">e4c3</move>
+	<move fen="rnbqkb1r/pppp1ppp/5n2/4p3/2B1P3/2N5/PPPP1PPP/R1BQK1NR b KQkq">f6e4</move>
+	<move fen="rnbqkb1r/pppp1ppp/5n2/4p3/4P3/2N3P1/PPPP1P1P/R1BQKBNR b KQkq">d7d5</move>
+	<move fen="rnbqkb1r/ppp2ppp/5n2/3Pp3/8/2N3P1/PPPP1P1P/R1BQKBNR b KQkq">f6d5</move>
+	<move fen="rnbqkb1r/ppp2ppp/8/3np3/8/2N3P1/PPPP1PBP/R1BQK1NR b KQkq">d5c3</move>
+	<!-- play against Bishop's Opening -->
+	<move fen="rnbqkbnr/pppp1ppp/8/4p3/2B1P3/8/PPPP1PPP/RNBQK1NR b KQkq">g8f6</move>
+	<move fen="rnbqkb1r/pppp1ppp/5n2/4p3/2B1P3/3P4/PPP2PPP/RNBQK1NR b KQkq">f8c5</move>
+	<move fen="rnbqkb1r/pppp1ppp/5n2/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R b KQkq">b8c6</move>
+	<!-- play against Center Game -->
+	<move fen="rnbqkbnr/pppp1ppp/8/4p3/3PP3/8/PPP2PPP/RNBQKBNR b KQkq">e5d4</move>
+	<move fen="rnbqkbnr/pppp1ppp/8/8/3QP3/8/PPP2PPP/RNB1KBNR b KQkq">b8c6</move>
+	<move fen="r1bqkbnr/pppp1ppp/2n5/8/4P3/4Q3/PPP2PPP/RNB1KBNR b KQkq">g8f6</move>
+	<move fen="rnbqkbnr/pppp1ppp/8/8/3pP3/2P5/PP3PPP/RNBQKBNR b KQkq">d4c3</move>
+
+	<!-- 1.d4 -->
 	<move fen="rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq">g8f6</move>
 	<move fen="rnbqkb1r/pppppppp/5n2/8/2PP4/8/PP2PPPP/RNBQKBNR b KQkq">e7e6</move>
-
-	<!-- play Nimzo Indian -->
-	<move fen="rnbqkb1r/pppp1ppp/4pn2/8/2PP4/2N5/PP2PPPP/R1BQKBNR b KQkq">f8b4</move>
-
-	<!-- play Queen's Indian -->
+	<!-- Queen's Indian -->
 	<move fen="rnbqkb1r/pppp1ppp/4pn2/8/2PP4/5N2/PP2PPPP/RNBQKB1R b KQkq">b7b6</move>
+	<move fen="rnbqkb1r/p1pp1ppp/1p2pn2/8/2PP4/5NP1/PP2PP1P/RNBQKB1R b KQkq">c8a6</move>
+	<move fen="rn1qkb1r/p1pp1ppp/bp2pn2/8/2PP4/1P3NP1/P3PP1P/RNBQKB1R b KQkq">f8b4</move>
+	<move fen="rn1qk2r/p1pp1ppp/bp2pn2/8/1bPP4/1P3NP1/P2BPP1P/RN1QKB1R b KQkq">b4e7</move>
+	<move fen="rn1qk2r/p1ppbppp/bp2pn2/8/2PP4/1P3NP1/P2BPPBP/RN1QK2R b KQkq">e8g8</move>
+	<move fen="rn1qk2r/p1ppbppp/bp2pn2/8/2PP4/1PN2NP1/P2BPP1P/R2QKB1R b KQkq">e8g8</move>
+	<move fen="rn1qkb1r/p1pp1ppp/bp2pn2/8/2PP4/5NP1/PP1NPP1P/R1BQKB1R b KQkq">d7d5</move>
+	<move fen="rn1qkb1r/p1pp1ppp/bp2pn2/8/Q1PP4/5NP1/PP2PP1P/RNB1KB1R b KQkq">f8e7</move>
+	<move fen="rn1qkb1r/p1pp1ppp/bp2pn2/8/2PP4/5NP1/PPQ1PP1P/RNB1KB1R b KQkq">c7c5</move>
+	<move fen="rnbqkb1r/p1pp1ppp/1p2pn2/8/2PP4/P4N2/1P2PPPP/RNBQKB1R b KQkq">c8b7</move>
+	<move fen="rn1qkb1r/pbpp1ppp/1p2pn2/8/2PP4/P1N2N2/1P2PPPP/R1BQKB1R b KQkq">d7d5</move>
+	<move fen="rn1qkb1r/pbp2ppp/1p2pn2/3p2B1/2PP4/P1N2N2/1P2PPPP/R2QKB1R b KQkq">f8e7</move>
+	<move fen="rn1qkb1r/pbp2ppp/1p2pn2/3P4/3P4/P1N2N2/1P2PPPP/R1BQKB1R b KQkq">f6d5</move>
+	<move fen="rnbqkb1r/p1pp1ppp/1p2pn2/8/2PP4/2N2N2/PP2PPPP/R1BQKB1R b KQkq">c8b7</move>
+	<move fen="rn1qkb1r/pbpp1ppp/1p2pn2/6B1/2PP4/2N2N2/PP2PPPP/R2QKB1R b KQkq">f8e7</move>
+	<move fen="rnbqkb1r/p1pp1ppp/1p2pn2/8/2PP4/4PN2/PP3PPP/RNBQKB1R b KQkq">c8b7</move>
+	<move fen="rn1qkb1r/pbpp1ppp/1p2pn2/8/2PP4/3BPN2/PP3PPP/RNBQK2R b KQkq">d7d5</move>
+	<!-- Nimzo Indian -->
+	<move fen="rnbqkb1r/pppp1ppp/4pn2/8/2PP4/2N5/PP2PPPP/R1BQKBNR b KQkq">f8b4</move>
+	<move fen="rnbqk2r/pppp1ppp/4pn2/8/1bPP4/2N1P3/PP3PPP/R1BQKBNR b KQkq">e8g8</move>
+	<move fen="rnbq1rk1/pppp1ppp/4pn2/8/1bPP4/2NBP3/PP3PPP/R1BQK1NR b KQ">d7d5</move>
+	<move fen="rnbq1rk1/ppp2ppp/4pn2/3p4/1bPP4/2NBPN2/PP3PPP/R1BQK2R b KQ">c7c5</move>
+	<move fen="rnbq1rk1/pp3ppp/4pn2/2pp4/1bPP4/2NBPN2/PP3PPP/R1BQ1RK1 b -">c5d4</move>
+	<move fen="rnbq1rk1/pp3ppp/4pn2/3p4/1bPP4/2NB1N2/PP3PPP/R1BQ1RK1 b -">d5c4</move>
+	<move fen="rnbq1rk1/pp3ppp/4pn2/8/1bBP4/2N2N2/PP3PPP/R1BQ1RK1 b -">b7b6</move>
+	<move fen="rnbq1rk1/pppp1ppp/4pn2/8/1bPP4/2N1P3/PP2NPPP/R1BQKB1R b KQ">d7d5</move>
+	<move fen="rnbq1rk1/ppp2ppp/4pn2/3p4/1bPP4/P1N1P3/1P2NPPP/R1BQKB1R b KQ">b4d6</move>
+	<move fen="rnbqk2r/pppp1ppp/4pn2/8/1bPP4/2N5/PPQ1PPPP/R1B1KBNR b KQkq">e8g8</move>
+	<move fen="rnbq1rk1/pppp1ppp/4pn2/8/1bPP4/P1N5/1PQ1PPPP/R1B1KBNR b KQ">b4c3</move>
+	<move fen="rnbq1rk1/pppp1ppp/4pn2/8/2PP4/P1Q5/1P2PPPP/R1B1KBNR b KQ">b7b6</move>
+	<move fen="rnbq1rk1/p1pp1ppp/1p2pn2/6B1/2PP4/P1Q5/1P2PPPP/R3KBNR b KQ">c8b7</move>
+	<move fen="rnbq1rk1/pppp1ppp/4pn2/8/1bPP4/2N2N2/PPQ1PPPP/R1B1KB1R b KQ">c7c5</move>
+	<move fen="rnbqk2r/pppp1ppp/4pn2/8/1bPP4/2N2N2/PP2PPPP/R1BQKB1R b KQkq">d7d5</move>
+	<move fen="rnbqk2r/ppp2ppp/4pn2/3p2B1/1bPP4/2N2N2/PP2PPPP/R2QKB1R b KQkq">h7h6</move>
+	<move fen="rnbqk2r/ppp2pp1/4pB1p/3p4/1bPP4/2N2N2/PP2PPPP/R2QKB1R b KQkq">d8f6</move>
+	<move fen="rnbqk2r/ppp2ppp/4pn2/3P4/1b1P4/2N2N2/PP2PPPP/R1BQKB1R b KQkq">e4d5</move>
+	<move fen="rnbqk2r/ppp2ppp/4pn2/3p4/1bPP4/2N1PN2/PP3PPP/R1BQKB1R b KQkq">e8g8</move>
+	<move fen="rnbqk2r/pppp1ppp/4pn2/8/1bPP4/2N2P2/PP2P1PP/R1BQKBNR b KQkq">c7c5</move>
+	<move fen="rnbqk2r/pppp1ppp/4pn2/8/1bPP4/P1N5/1P2PPPP/R1BQKBNR b KQkq">b4c3</move>
+	<move fen="rnbqk2r/pppp1ppp/4pn2/8/2PP4/P1P5/4PPPP/R1BQKBNR b KQkq">c7c5</move>
+	<move fen="rnbqk2r/pppp1ppp/4pn2/6B1/1bPP4/2N5/PP2PPPP/R2QKBNR b KQkq">c7c5</move>
+	<move fen="rnbqk2r/pppp1ppp/4pn2/8/1bPP4/2N3P1/PP2PP1P/R1BQKBNR b KQkq">d7d5</move>
+	<!-- Catalan -->
+	<move fen="rnbqkb1r/pppp1ppp/4pn2/8/2PP4/6P1/PP2PP1P/RNBQKBNR b KQkq">d7d5</move>
+	<move fen="rnbqkb1r/ppp2ppp/4pn2/3p4/2PP4/5NP1/PP2PP1P/RNBQKB1R b KQkq">f8b4</move>
+	<move fen="rnbqk2r/ppp2ppp/4pn2/3p4/1bPP4/5NP1/PP1BPP1P/RN1QKB1R b KQkq">b8d6</move>
+	<move fen="rnbqkb1r/ppp2ppp/4pn2/3p4/2PP4/6P1/PP2PPBP/RNBQK1NR b KQkq">f8e7</move>
+	<move fen="rnbqk2r/ppp1bppp/4pn2/3p4/2PP4/5NP1/PP2PPBP/RNBQK2R b KQkq">e8g8</move>
+	<move fen="rnbq1rk1/ppp1bppp/4pn2/3p4/2PP4/5NP1/PP2PPBP/RNBQ1RK1 b -">d5c4</move>
+	<move fen="rnbq1rk1/ppp1bppp/4pn2/8/2pP4/5NP1/PPQ1PPBP/RNB2RK1 b -">b7b5</move>
+	<!-- Other white replies -->
+	<move fen="rnbqkb1r/pppppppp/5n2/8/3P4/5N2/PPP1PPPP/RNBQKB1R b KQkq">e7e6</move>
+	<move fen="rnbqkb1r/pppp1ppp/4pn2/8/3P4/4PN2/PPP2PPP/RNBQKB1R b KQkq">b7b6</move>
+	<move fen="rnbqkb1r/p1pp1ppp/1p2pn2/8/3P4/3BPN2/PPP2PPP/RNBQK2R b KQkq">c8b7</move>
+	<move fen="rn1qkb1r/pbpp1ppp/1p2pn2/8/3P4/3BPN2/PPP2PPP/RNBQ1RK1 b kq">d7d5</move>
+	<move fen="rnbqkb1r/pppp1ppp/4pn2/6B1/3P4/5N2/PPP1PPPP/RN1QKB1R b KQkq">h7h6</move>
+	<move fen="rnbqkb1r/pppp1ppp/4pn2/8/3P4/5NP1/PPP1PP1P/RNBQKB1R b KQkq">b7b5</move>
+	<move fen="rnbqkb1r/pppp1ppp/4pn2/8/3P1B2/5N2/PPP1PPPP/RN1QKB1R b KQkq">b7b6</move>
+	<move fen="rnbqkb1r/pppppppp/5n2/6B1/3P4/8/PPP1PPPP/RN1QKBNR b KQkq">e7e6</move>
+	<move fen="rnbqkb1r/pppp1ppp/4pn2/6B1/3PP3/8/PPP2PPP/RN1QKBNR b KQkq">h7h6</move>
+	<move fen="rnbqkb1r/pppp1pp1/4pB1p/8/3PP3/8/PPP2PPP/RN1QKBNR b KQkq">d8f6</move>
+	<move fen="rnbqkb1r/pppp1ppp/4pn2/6B1/3P4/5N2/PPP1PPPP/RN1QKB1R b KQkq">h7h6</move>
+	<move fen="rnbqkb1r/pppppppp/5n2/8/3P4/2N5/PPP1PPPP/R1BQKBNR b KQkq">d7d5</move>
+	<move fen="rnbqkb1r/ppp1pppp/5n2/3p2B1/3P4/2N5/PPP1PPPP/R2QKBNR b KQkq">b8d7</move>
+	<move fen="rnbqkb1r/pppppppp/5n2/8/3P4/6P1/PPP1PP1P/RNBQKBNR b KQkq">d7d5</move>
+	<move fen="rnbqkb1r/pppppppp/5n2/8/3P1B2/8/PPP1PPPP/RN1QKBNR b KQkq">e7e6</move>
+	<move fen="rnbqkb1r/pppppppp/5n2/8/3P4/4P3/PPP2PPP/RNBQKBNR b KQkq">d7d5</move>
+	<move fen="rnbqkb1r/ppp1pppp/5n2/3p4/3P4/4PN2/PPP2PPP/RNBQKB1R b KQkq">c7c5</move>
 
-	<!-- play against Reti Opening -->
-	<move fen="rnbqkbnr/pppppppp/8/8/8/2N5/PPPPPPPP/R1BQKBNR b KQkq">d7d5</move>
+	<!-- 1.Nf3 -->
+	<move fen="rnbqkbnr/pppppppp/8/8/8/5N2/PPPPPPPP/RNBQKB1R b KQkq">g8f6</move>
+	<move fen="rnbqkb1r/pppppppp/5n2/8/2P5/5N2/PP1PPPPP/RNBQKB1R b KQkq">e7e6</move>
+	<move fen="rnbqkb1r/pppp1ppp/4pn2/8/2P5/2N2N2/PP1PPPPP/R1BQKB1R b KQkq">d7d5</move>
+	<move fen="rnbqkb1r/pppp1ppp/4pn2/8/2P5/5NP1/PP1PPP1P/RNBQKB1R b KQkq">d7d5</move>
+	<move fen="rnbqkb1r/ppp2ppp/4pn2/3p4/2P5/5NP1/PP1PPPBP/RNBQK2R b KQkq">d5c4</move>
+	<move fen="rnbqkb1r/pppppppp/5n2/8/8/5NP1/PPPPPP1P/RNBQKB1R b KQkq">d7d5</move>
+	<move fen="rnbqkb1r/ppp1pppp/5n2/3p4/8/5NP1/PPPPPPBP/RNBQK2R b KQkq">c7c6</move>
+	<move fen="rnbqkb1r/pp2pppp/2p2n2/3p4/8/5NP1/PPPPPPBP/RNBQ1RK1 b kq">c8f5</move>
+	<move fen="rnbqkb1r/pp2pppp/2p2n2/3p4/2P5/5NP1/PP1PPPBP/RNBQK2R b KQkq">d5c4</move>
+	<move fen="rnbqkb1r/ppp1pppp/5n2/3p4/3P4/5NP1/PPP1PP1P/RNBQKB1R b KQkq">e7e6</move>
+	<move fen="rnbqkb1r/ppp2ppp/4pn2/3p4/3P4/5NP1/PPP1PPBP/RNBQK2R b KQkq">b7b5</move>
+	<move fen="rnbqkb1r/pppppppp/5n2/8/8/1P3N2/P1PPPPPP/RNBQKB1R b KQkq">d7d5</move>
 
-	<!-- play against English Opening -->
+	<!-- 1.c4 -->
 	<move fen="rnbqkbnr/pppppppp/8/8/2P5/8/PP1PPPPP/RNBQKBNR b KQkq">e7e5</move>
+	<move fen="rnbqkbnr/pppp1ppp/8/4p3/2P5/2N5/PP1PPPPP/R1BQKBNR b KQkq">g8f6</move>
+	<move fen="rnbqkbnr/pppp1ppp/8/4p3/2P5/6P1/PP1PPP1P/RNBQKBNR b KQkq">g8f6</move>
+	<move fen="rnbqkb1r/pppp1ppp/5n2/4p3/2P5/2N2N2/PP1PPPPP/R1BQKB1R b KQkq">b8c6</move>
+	<move fen="r1bqkb1r/pppp1ppp/2n2n2/4p3/2P5/2N2NP1/PP1PPP1P/R1BQKB1R b KQkq">f8b4</move>
+	<move fen="r1bqk2r/pppp1ppp/2n2n2/4p3/1bP5/2N2NP1/PP1PPPBP/R1BQK2R b KQkq">e8g8</move>
+	<move fen="r1bq1rk1/pppp1ppp/2n2n2/4p3/1bP5/2N2NP1/PP1PPPBP/R1BQ1RK1 b -">e5e4</move>
+	<move fen="r1bqkb1r/pppp1ppp/2n2n2/4p3/2P5/2N1PN2/PP1P1PPP/R1BQKB1R b KQkq">f8b4</move>
+	<move fen="r1bqk2r/pppp1ppp/2n2n2/4p3/1bP5/2N1PN2/PPQP1PPP/R1B1KB1R b KQkq">b4c3</move>
+	<move fen="r1bqkb1r/pppp1ppp/2n2n2/4p3/2PP4/2N2N2/PP2PPPP/R1BQKB1R b KQkq">e5d4</move>
+	<move fen="rnbqkb1r/pppp1ppp/5n2/4p3/2P5/2N3P1/PP1PPP1P/R1BQKBNR b KQkq">f8b4</move>
+	<move fen="rnbqk2r/pppp1ppp/5n2/4p3/1bP5/2N3P1/PP1PPPBP/R1BQK1NR b KQkq">e8g8</move>
+	<move fen="rnbqkb1r/pppp1ppp/5n2/4p3/2P5/6P1/PP1PPPBP/RNBQK1NR b KQkq">c7c6</move>
+	<move fen="rnbqkb1r/pp1p1ppp/2p2n2/4p3/2PP4/6P1/PP2PPBP/RNBQK1NR b KQkq">e5d4</move>
 
-	<!-- unusual white's first moves -->
-	<move fen="rnbqkbnr/pppppppp/8/8/8/P7/1PPPPPPP/RNBQKBNR b KQkq">d7d5</move>
-	<move fen="rnbqkbnr/pppppppp/8/8/P7/8/1PPPPPPP/RNBQKBNR b KQkq">d7d5</move>
+	<!-- 1.g3 -->
+	<move fen="rnbqkbnr/pppppppp/8/8/8/6P1/PPPPPP1P/RNBQKBNR b KQkq">e7e5</move>
+	<move fen="rnbqkbnr/pppp1ppp/8/4p3/8/6P1/PPPPPPBP/RNBQK1NR b KQkq">d7d5</move>
+
+	<!-- 1.f4 -->
+	<move fen="rnbqkbnr/pppppppp/8/8/5P2/8/PPPPP1PP/RNBQKBNR b KQkq">g8f6</move>
+	<move fen="rnbqkb1r/pppppppp/5n2/8/5P2/5N2/PPPPP1PP/RNBQKB1R b KQkq">d7d5</move>
+
+	<!-- 1.b3 -->
 	<move fen="rnbqkbnr/pppppppp/8/8/8/1P6/P1PPPPPP/RNBQKBNR b KQkq">d7d5</move>
-	<move fen="rnbqkbnr/pppppppp/8/8/1P6/8/P1PPPPPP/RNBQKBNR b KQkq">d7d5</move>
-	<move fen="rnbqkbnr/pppppppp/8/8/8/2P5/PP1PPPPP/RNBQKBNR b KQkq">g8f6</move>
-	<move fen="rnbqkbnr/pppppppp/8/8/8/3P4/PPP1PPPP/RNBQKBNR b KQkq">g7g6</move>
-	<move fen="rnbqkbnr/pppppppp/8/8/8/4P3/PPPP1PPP/RNBQKBNR b KQkq">g7g6</move>
-	<move fen="rnbqkbnr/pppppppp/8/8/8/5P2/PPPPP1PP/RNBQKBNR b KQkq">e7e5</move>
-	<move fen="rnbqkbnr/pppppppp/8/8/5P2/8/PPPPP1PP/RNBQKBNR b KQkq">d7d5</move>
-	<move fen="rnbqkbnr/pppppppp/8/8/8/6P1/PPPPPP1P/RNBQKBNR b KQkq">d7d5</move>
-	<move fen="rnbqkbnr/pppppppp/8/8/6P1/8/PPPPPP1P/RNBQKBNR b KQkq">d7d5</move>
-	<move fen="rnbqkbnr/pppppppp/8/8/8/7P/PPPPPPP1/RNBQKBNR b KQkq">d7d5</move>
-	<move fen="rnbqkbnr/pppppppp/8/8/7P/8/PPPPPPP1/RNBQKBNR b KQkq">d7d5</move>
-	<move fen="rnbqkbnr/pppppppp/8/8/8/N7/PPPPPPPP/R1BQKBNR b KQkq">d7d5</move>
-	<move fen="rnbqkbnr/pppppppp/8/8/8/2N5/PPPPPPPP/R1BQKBNR b KQkq">d7d5</move>
-	<move fen="rnbqkbnr/pppppppp/8/8/8/5N2/PPPPPPPP/RNBQKB1R b KQkq">d7d5</move>
-	<move fen="rnbqkbnr/pppppppp/8/8/8/7N/PPPPPPPP/RNBQKB1R b KQkq">d7d5</move>
+	<move fen="rnbqkbnr/ppp1pppp/8/3p4/8/1P3N2/P1PPPPPP/RNBQKB1R b KQkq">c8g4</move>
+	<move fen="rnbqkbnr/ppp1pppp/8/3p4/8/1P6/PBPPPPPP/RN1QKBNR b KQkq">c7c5</move>
 
+	<!-- 1.Nc3 -->
+	<move fen="rnbqkbnr/pppppppp/8/8/8/2N5/PPPPPPPP/R1BQKBNR b KQkq">d7d5</move>
+	<move fen="rnbqkbnr/ppp1pppp/8/3p4/3P4/2N5/PPP1PPPP/R1BQKBNR b KQkq">g8f6</move>
+	<move fen="rnbqkbnr/ppp1pppp/8/3p4/4P3/2N5/PPPP1PPP/R1BQKBNR b KQkq">d5e4</move>
+
+	<!-- 1.b4 -->
+	<move fen="rnbqkbnr/pppppppp/8/8/1P6/8/P1PPPPPP/RNBQKBNR b KQkq">e7e5</move>
+	<move fen="rnbqkbnr/pppp1ppp/8/4p3/1P6/8/PBPPPPPP/RN1QKBNR b KQkq">f8b4</move>
+	<move fen="rnbqk1nr/pppp1ppp/8/4B3/1b6/8/P1PPPPPP/RN1QKBNR b KQkq">g8f6</move>
+
+	<!-- other white first moves -->
+	<move fen="rnbqkbnr/pppppppp/8/8/8/4P3/PPPP1PPP/RNBQKBNR b KQkq">d7d5</move>
+	<move fen="rnbqkbnr/pppppppp/8/8/6P1/8/PPPPPP1P/RNBQKBNR b KQkq">d7d5</move>
+	<move fen="rnbqkbnr/pppppppp/8/8/8/P7/1PPPPPPP/RNBQKBNR b KQkq">d7d5</move>
+	<move fen="rnbqkbnr/pppppppp/8/8/8/3P4/PPP1PPPP/RNBQKBNR b KQkq">d7d5</move>
+	<move fen="rnbqkbnr/pppppppp/8/8/8/2P5/PP1PPPPP/RNBQKBNR b KQkq">g8f6</move>
+	<move fen="rnbqkbnr/pppppppp/8/8/8/7P/PPPPPPP1/RNBQKBNR b KQkq">d7d5</move>
+	<move fen="rnbqkbnr/pppppppp/8/8/8/5P2/PPPPP1PP/RNBQKBNR b KQkq">e7e5</move>
+	<move fen="rnbqkbnr/pppppppp/8/8/8/N7/PPPPPPPP/R1BQKBNR b KQkq">e7e5</move>
+	<move fen="rnbqkbnr/pppppppp/8/8/8/7N/PPPPPPPP/RNBQKB1R b KQkq">d7d5</move>
+	<move fen="rnbqkbnr/pppppppp/8/8/P7/8/1PPPPPPP/RNBQKBNR b KQkq">e7e5</move>
+	<move fen="rnbqkbnr/pppppppp/8/8/7P/8/PPPPPPP1/RNBQKBNR b KQkq">d7d5</move>
 </book>

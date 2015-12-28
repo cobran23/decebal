@@ -1,3 +1,3 @@
 #!/bin/sh
 unset JAVA_TOOL_OPTIONS
-java -cp /home/constantin/workspace/Decebal/decebal:/home/constantin/workspace/Decebal/decebal/bin decebal.Main
+java -cp /home/constantin/workspace/decebal:/home/constantin/workspace/decebal/bin decebal.Main
